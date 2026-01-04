@@ -61,3 +61,7 @@ minio_install_client: true
 
 # TODO: in future
 minio_enable_ssl: false
+
+# HTTP Proxy
+http_proxy: ""
+https_proxy: ""
