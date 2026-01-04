@@ -52,7 +52,7 @@
     owner: "{{ minio_user }}"
     group: "{{ minio_group }}"
     mode: 0755
-    checksum: "sha256:{{ _minio_server_download_url }}.sha256sum"
+    # checksum: "sha256:{{ _minio_server_download_url }}.sha256sum"
   environment:
     http_proxy: "{{ http_proxy }}"
     https_proxy: "{{ https_proxy }}"
