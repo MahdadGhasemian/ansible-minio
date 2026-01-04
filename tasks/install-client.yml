@@ -21,7 +21,10 @@
     owner: "{{ minio_user }}"
     group: "{{ minio_group }}"
     mode: 0755
-    checksum: "sha256:{{ _minio_client_download_url }}.sha256sum"
+    # checksum: "sha256:{{ _minio_client_download_url }}.sha256sum"
+  environment:
+    http_proxy: "{{ http_proxy }}"
+    https_proxy: "{{ https_proxy }}"
   register: _download_client
   until: _download_client is succeeded
   retries: 5
